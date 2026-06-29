@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(BASE_DIR, "dataset_stki.csv")
+file_path = os.path.join(BASE_DIR, "dataset_STKI.csv")
 
 df = pd.read_csv(file_path, sep=";")
 
