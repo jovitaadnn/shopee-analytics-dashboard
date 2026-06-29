@@ -1,0 +1,279 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F5F5F5;
+    display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:300px;
+    height:100vh;
+    background:#FFFFFF;
+    position:fixed;
+    left:0;
+    top:0;
+    box-shadow:0 0 15px rgba(0,0,0,.08);
+    padding:30px 10px;
+
+}
+
+.logo{
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.logo img{
+    width: 230px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.logo h3{
+    color:#EE4D2D;
+    font-weight:400;
+    font-size:25px;
+}
+
+.logo p{
+    color:#777;
+    font-size:14px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:12px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#555;
+    padding:13px 20px;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.sidebar ul li a i{
+    font-size:18px;
+}
+
+.sidebar ul li a:hover{
+    background:#EE4D2D;
+    color:white;
+}
+
+.sidebar ul .active a{
+    background:#EE4D2D;
+    color:white;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    margin-left:300px;
+    width:100%;
+    padding:30px;
+}
+
+/* HEADER */
+
+.topbar{
+    background:white;
+    padding:25px 30px;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+    margin-bottom:30px;
+}
+.topbar h2{
+    color:#333;
+    font-size:28px;
+    margin-bottom:8px;
+}
+.topbar span{
+    color:#777;
+}
+
+/* WELCOME CARD */
+
+.welcome-card{
+    background:linear-gradient(135deg,#EE4D2D,#FF7A59);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(238,77,45,.3);
+}
+
+.welcome-card h1{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.welcome-card p{
+    width:70%;
+    line-height:1.8;
+}
+
+.btn-dashboard{
+    margin-top:25px;
+    background:white;
+    color:#EE4D2D;
+    border:none;
+    padding:14px 30px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-dashboard:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,255,255,.3);
+}
+
+/* DASHBOARD CARDS */
+.dashboard-card{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap: 10px;
+}
+
+.card-item{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.card-item:hover{
+    transform:translateY(-8px);
+}
+
+.card-item i{
+    font-size:40px;
+    color:#EE4D2D;
+    margin-bottom:10px;
+}
+
+.card-item h4{
+    font-size: 18px;
+    font-weight: 900px;
+    margin-bottom:10px;
+    color:#333;
+}
+
+.card-item p{
+    font-size: 15px;
+    color:#777;
+}
+
+.dashboard-page{
+    width: 100%;
+    padding:15px 25px;
+    background:#F5F5F5;
+    min-height:100vh;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:20px 30px;
+    border-radius:10px;
+    margin-bottom:25px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.btn-home{
+    background:#EE4D2D;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.btn-home:hover{
+    background:#d93f20;
+    color:white;
+}
+
+.dashboard-container-page{
+    background:white;
+    width: 100%;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    overflow:auto;
+}
+
+.dashboard-container-page iframe{
+    width:1466px;
+    height:868px;
+    border:none;
+}
+
+/* SKTI */
+.dashboard-header{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.dashboard-header h2{
+    color:#ee4d2d;
+    font-weight:700;
+}
+
+.search-box{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.result-card{
+    background:#fff;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.result-card:hover{
+    transform:translateY(-4px);
+}
+
+.score-box{
+    background:#ee4d2d;
+    color:white;
+    border-radius:15px;
+    padding:20px;
+}
+
+.score-box h3{
+    margin:0;
+    font-weight:bold;
+}
